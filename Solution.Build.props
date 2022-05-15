@@ -1,0 +1,16 @@
+﻿<Project>
+  <PropertyGroup>
+    <AssemblyBaseName>ElmishCrazyInterop</AssemblyBaseName>
+    <RootNamespace>ElmishCrazyInterop</RootNamespace>
+    <Company>XperiAndri</Company>
+    <Product>ElmishCrazyInterop</Product>
+    <Authors>Elmish.Uno</Authors>
+    <Copyright>Copyright © XperiAndri</Copyright>
+    <CSharpLangVersion>10.0</CSharpLangVersion>
+    <FSharpLangVersion>6.0</FSharpLangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+</Project>
