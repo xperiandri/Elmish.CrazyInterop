@@ -30,7 +30,6 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
     <PackageReference Include="System.Collections.Immutable" />
-    <PackageReference Include="Uno.Core" />
   </ItemGroup>
 
 </Project>
