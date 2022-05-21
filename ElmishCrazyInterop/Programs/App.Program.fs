@@ -104,11 +104,11 @@ type Program (serviceProvider : IServiceProvider) =
         fun (_ : Model) ->
             fun (dispatch : Dispatch<ProgramMessage<RootMsg, Msg>>) ->
                 addHandlers.Invoke (
-                    (fun ex message handled setHandled ->
+                    (fun ex message _ setHandled ->
                         UnhandledException (ex, message) |> Local |> dispatch;
                         setHandled.Invoke true),
                     (fun deadline completed -> Suspend (deadline, completed) |> Local |> dispatch),
-                    (fun o -> Resuming  |> Local |> dispatch),
+                    (fun _ -> Resuming  |> Local |> dispatch),
                     (fun completed -> (EnteredBackground completed) |> Local |> dispatch),
                     (fun completed -> (LeavingBackground completed) |> Local |> dispatch))
             |> Cmd.ofSub
