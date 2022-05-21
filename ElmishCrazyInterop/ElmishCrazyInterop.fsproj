@@ -3,9 +3,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>$(FSharpLangVersion)</LangVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyName>$(AssemblyBaseName).Programs</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
